@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.log{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 800px;
+	padding: 35px 0px;
+	box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.3);
+}
+.sec1 img{
+	width: 50%;
+}
+.sec2{
+	width: 200px;
+	margin-left: -150px;
+	}
+.sec2 h1{
+	display: flex;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+}
+.mail{
+	border-bottom: 1px solid #000;
+	margin: 8px 0;
+	padding: 8px 0;
+}
+.mail i{
+	float: left;
+	width: 26px;
+	text-align: center;
+}
+.mail input{
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 14px;
+	width: 80%;
+}
+.mail:hover i{
+	color: #3232CC;
+	transition: 1s;
+}
+.password,.department_id,.role{
+	border-bottom: 1px solid #000;
+	margin: 8px 0;
+	padding: 8px 0;
+	display: flex;
+}
+.password i{
+	float: left;
+	width: 26px;
+	text-align: center;
+}
+.password input{
+	outline: none;
+	border: none;
+	background: none;
+	font-size: 14px;
+}
+.password:hover i{
+	color: #3232CC;
+	transition: 1s;
+}
+.btn{
+	position: relative;
+	left:25%;
+	width: 50%;
+	padding: 5px;
+	font-size: 15px;
+	cursor: pointer;
+	background-color: blue;
+	color: #fff;
+	border-radius: 15px;
+}
+.name{
+	border-bottom: 1px solid #000;
+	margin: 8px 0;
+	padding: 8px 0;
+}
+.name i{
+	float: left;
+	width: 26px;
+	text-align: center;
+}
+.name input{
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 14px;
+	width: 80%;
+}
+.name:hover i{
+	color: #3232CC;
+	transition: 1s;
+}
+.mobile{
+	border-bottom: 1px solid #000;
+	margin: 8px 0;
+	padding: 8px 0;
+}
+.mobile i{
+	float: left;
+	width: 26px;
+	text-align: center;
+}
+.mobile input{
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 14px;
+	width: 80%;
+}
+.mobile:hover i{
+	color: #3232CC;
+	transition: 1s;
+}
+.company{
+	border-bottom: 1px solid #000;
+	margin: 8px 0;
+	padding: 8px 0;
+}
+.company i{
+	float: left;
+	width: 26px;
+	text-align: center;
+}
+.company input{
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 14px;
+	width: 80%;
+}
+.company:hover i{
+	color: #3232CC;
+	transition: 1s;
+}
+.cross a{
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	top: 10px;
+	left: 770px;
+	color: #000;
+}

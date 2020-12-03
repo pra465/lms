@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+</urlset>
+<signup>
+<name>Ashish</name>
+<mobno>9426323423</mobno>
+<role>admin</role>
+<email>gfh@gmail.com </email>
+<password>12345</password>
+</signup>
+<login>
+<email>ak63@gmail.com</email>
+<password>12345</password>
+</login>
+<about>
+lms information 
+</about>
+<contact>
+<input>
+Mail us at
+<emailus>
+aahdk@gmail.com
+</emailus>
+</input>
+</contact>
+<signup>
+<name>SSR</name>
+<mobno>7426323423</mobno>
+<role>admin</role>
+<email>dfh@gmail.com </email>
+<password>423475</password>
+</signup>
+<login>
+<email>sk63@gmail.com</email>
+<password>423475</password>
+</login>
+<about>
+lms information 
+</about>
+<contact>
+<input>
+Mail us at
+<emailus>
+aahdk@gmail.com
+</emailus>
+</input>
+</contact>
+</employee>
