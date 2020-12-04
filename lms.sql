@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 12, 2020 at 05:16 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.6
+-- Generation Time: Dec 04, 2020 at 06:57 AM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,13 +24,20 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `department`
+-- Table structure for table `admin`
 --
 
-CREATE TABLE `department` (
-  `id` int(11) NOT NULL,
-  `department` varchar(255) NOT NULL
+CREATE TABLE `admin` (
+  `username` varchar(1000) NOT NULL,
+  `password` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`username`, `password`) VALUES
+('admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -53,50 +60,31 @@ CREATE TABLE `employee` (
 --
 
 INSERT INTO `employee` (`name`, `email`, `mobile`, `password`, `department_id`, `role`, `companyame`) VALUES
-('rishn ver', '808056461', 0, 'ap2985@srmist.edu.in', '0', 0, 'djnk');
+('hjkhjk kjhjkj', 'rd@gmail.com', 2147483647, 'Pass@3333', 'dep', 1, 'tcs'),
+('Rishabh Verma', 'rd@gm.com', 2147483647, 'Pass@2222', 'dep', 1, 'tcs');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `leave_type`
+-- Table structure for table `leave_request`
 --
 
-CREATE TABLE `leave_type` (
-  `id` int(11) NOT NULL,
-  `leave_type` varchar(255) NOT NULL
+CREATE TABLE `leave_request` (
+  `employee_mail` varchar(1000) NOT NULL,
+  `start_date` varchar(1000) NOT NULL,
+  `end_date` varchar(1000) NOT NULL,
+  `reason` varchar(1000) NOT NULL,
+  `status` varchar(1000) NOT NULL DEFAULT 'pending'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Indexes for dumped tables
+-- Dumping data for table `leave_request`
 --
 
---
--- Indexes for table `department`
---
-ALTER TABLE `department`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `leave_type`
---
-ALTER TABLE `leave_type`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `department`
---
-ALTER TABLE `department`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `leave_type`
---
-ALTER TABLE `leave_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+INSERT INTO `leave_request` (`employee_mail`, `start_date`, `end_date`, `reason`, `status`) VALUES
+('rd@gmail.com', '2020-12-09', '2020-12-11', 'none', 'accepted'),
+('rd@gmail.com', '2020-12-16', '2020-12-18', 'none', 'rejected'),
+('rd@gmail.com', '2020-12-22', '2020-12-25', 'Family Issues', 'pending');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

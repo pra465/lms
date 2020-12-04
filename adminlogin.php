@@ -3,14 +3,14 @@
 	include './db.php';
 	$msg="";
 	if($_SERVER['REQUEST_METHOD'] === 'POST'){
-		$email=$_POST['email'];
+		$username=$_POST['email'];
 		$password=$_POST['pass'];
-		$sql = "SELECT * from employee where email='".$email."' and password='".$password."'"; 
+		$sql = "SELECT * from admin where username='".$username."' and password='".$password."'"; 
         $res = $conn->query($sql);
 		$count=mysqli_num_rows($res);
 		if($count>0){
-			$_SESSION['employee_mail']=$email;
-			header('location:profile.php');
+			$_SESSION['admin']=$username;
+			header('location:admindashboard.php');
 			die();	
 		}
 		else{
@@ -23,7 +23,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>Admin Login</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/login-style.css">
 	<script src="https://kit.fontawesome.com/e7a70a44f9.js" crossorigin="anonymous"></script>
@@ -31,16 +31,16 @@
 </head>
 <body>
 	<form name="myForm"  onsubmit="return validateForm()" method="post">
-	<div class="log">
+	<div class="log" style="justify-content:space-between">
 		<div class="sec1">
-			<img src="./assets/loginpic.jpg">
+			<img src="./assets/adminloginpic.jpg">
 		</div>
 		<div class="sec2">
-		  <h1>Login</h1>
+		  <h1>Admin Login</h1>
 		  <br>
 		  <div class="mail">
 			 <i class="fas fa-user"></i>
-		     <input type="text" name="email" placeholder="E-mail" required>
+		     <input type="text" name="email" placeholder="Username" required>
 		  </div>
 		  <br>
 		 <div class="password">
