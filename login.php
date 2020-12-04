@@ -8,12 +8,11 @@
         $res = $conn->query($sql);
 		$count=mysqli_num_rows($res);
 		if($count>0){
-			echo 'success';
 			// $row=mysqli_fetch_assoc($res);
 			// $_SESSION['ROLE']=$row['role'];
 			// $_SESSION['USER_ID']=$row['id'];
 			// $_SESSION['USER_NAME']=$row['name'];
-			header('location:home.php');
+			header('location:profile.php');
 			die();	
 		}
 		else{
