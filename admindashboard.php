@@ -21,6 +21,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <style>
+        .logout{
+            position:absolute;
+            top:40px;
+            right:20px;
+        }
         body{
             text-align:center;
         }
@@ -58,6 +63,8 @@
     </style>
 </head>
 <body>
+    <a href='./adminlogin.php' class='logout'>logout</a>
+    <br>
     <h1>Admin Dashboard</h1>
     <?php
         include 'db.php';

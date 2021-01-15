@@ -25,6 +25,11 @@
     <title>Profile</title>
     <link href='./css/profile-style.css' rel='stylesheet'>
     <style>
+        .logout{
+            position:absolute;
+            top:30px;
+            right:20px;
+        }
         body{
             width:100vw;
             height:100vh;
@@ -76,6 +81,8 @@
     </style>
 </head>
 <body>
+    <a href='./login.php' class='logout'>logout</a>
+    <br>
     <h1>Profile</h1>
     <div class="body">
         <div class="result">
